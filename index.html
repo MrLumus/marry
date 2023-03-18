@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>Владислав</title>
 </head>
 
@@ -32,7 +34,7 @@
   </div>
   <div class="container">
     <section class="header section">
-      <div class="wreath_header">
+      <div class="wreath_header wow animate__animated animate__fadeInDown animate__delay_1s" data-wow-duration="2s">
         <img src="assets/main_wreath.png" alt="Венок">
         <div class="wreath_text">
           <p>Владислав</p>
@@ -42,7 +44,7 @@
       </div>
     </section>
     <section class="invite section">
-      <div class="invite_container">
+      <div class="invite_container wow animate__animated animate__fadeInLeft animate__delay_1s" data-wow-duration="2s">
         <h2>Вся наша жизнь - Любовь!</h2>
         <div class="heart-box">
           <i class="fa-solid fa-heart heart"></i>
@@ -52,8 +54,9 @@
         <img class="wreath_divider" src="assets/wreath_divider.png" alt="Венок">
       </div>
     </section>
-    <section class="address">
-      <div class="address_container section">
+    <section class="address section">
+      <div class="address_container section wow animate__animated animate__fadeInRight animate__delay_1s"
+        data-wow-duration="2s">
         <div class="styled_title">Сбор гостей</div>
         <div class="address_header">Суббота | 3 июня | 2023</div>
         <div class="styled_text">Мы непременно хотим видеть вас на церемонии. Разделите с нами самый счастливый и
@@ -64,7 +67,8 @@
       </div>
     </section>
     <section class="dress-code section">
-      <div class="dress-code_container">
+      <div class="dress-code_container  wow animate__animated animate__fadeInLeft animate__delay_1s"
+        data-wow-duration="2s">
         <div class="styled_title">Дресс-код</div>
         <div class="dress-code_table">
           <div class="venus">
@@ -80,7 +84,7 @@
       </div>
     </section>
     <section class="gifts section">
-      <div class="gifts_container">
+      <div class="gifts_container  wow animate__animated animate__fadeInRight animate__delay_1s" data-wow-duration="2s">
         <div class="styled_title">Подарки молодожёнам</div>
         <div class="gift_icon"><i class="fa-solid fa-gift"></i></div>
         <div class="styled_text">Мы не хотим обременять вас выбором подарка, поэтому будем очень рады вашему вкладу в
@@ -90,7 +94,8 @@
       </div>
     </section>
     <section class="section feedback">
-      <div class="feedback_container">
+      <div class="feedback_container wow animate__animated animate__fadeInLeft animate__delay_1s"
+        data-wow-duration="2s">
         <div class="styled_title">Обратная связь</div>
         <div class="styled_text">Пожалуйста, подтвердите свое присутствие на свадьбе письмом или при личной встрече до
           31.03.2023</div>
@@ -110,6 +115,10 @@
       </div>
     </section>
   </div>
+  <script src="scripts/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <script src="https://kit.fontawesome.com/e0dfeb00af.js" crossorigin="anonymous"></script>
 </body>
 
